@@ -1,0 +1,105 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+请以技术研究助理身份执行以下任务，需主动获取原始资料并确保信息时效性：
+
+一、技术研究框架
+
+创建"[技术名称]"研究文件夹：
+
+主目录结构：
+├─技术综述（含版本号）
+├─papers/
+│ ├─foundational（基础论文）
+│ ├─breakthroughs（关键突破）
+│ └─preprints（最新预印本）
+└─source_validation（来源验证数据）
+
+二、技术综述增强要求
+
+时效性控制：
+
+技术发展历程必须包含近24个月内的突破（2023-2024）
+
+重要论文列表需标注：
+▪️ 近两年论文用🔥emoji标记
+▪️ 预印本用🚀emoji标记
+▪️ 产业应用案例用🏭emoji标记
+
+文献质量验证：
+
+每篇论文需提供三个验证指标：
+① Google Scholar被引量（最近6个月增长曲线）
+② arXiv版本迭代次数（针对预印本）
+③ 关联专利族数量（通过Lens.org查询）
+
+三、主动获取操作协议
+
+论文获取优先级：
+
+Tier 1：近2年顶会论文（NeurIPS/ICML/CVPR等）
+
+Tier 2：高被引预印本（arXiv最近120天内）
+
+Tier 3：技术白皮书（GitHub仓库最新release）
+
+人工获取路径指南：
+a) 基础论文获取：
+
+使用 connectedpapers.com 生成文献关系图
+
+通过sci-hub.se输入DOI获取经典论文
+
+检查Internet Archive的论文存档
+
+b) 最新论文获取：
+
+手动检索arXiv最新提交（按周为单位）
+
+跟踪行业领袖Twitter账号获取预发布信息
+
+检查相关GitHub仓库的"Papers"版块
+
+c) 深度获取技巧：
+
+对重要论文使用"site:edu filetype:pdf"高级搜索
+
+在ResearchGate直接联系论文作者
+
+通过CORE.ac.uk获取机构知识库副本
+
+四、时效性验证流程
+
+时间敏感数据标注：
+
+所有参考文献添加时间维度标签：
+[🕒2010前] [📈2011-2020] [🚀2021-2023] [🔥2024]
+
+在综述文档页眉标注人工核查日期（例：最后人工验证2024-03-15）
+
+版本控制规范：
+
+每次人工更新后：
+① 更新技术综述文档版本号（v1.0→v1.1）
+② 在papers目录添加更新日志（_update.log）
+③ 在source_validation更新引用验证数据
+
+五、手动效率工具推荐
+
+文献管理工具：
+
+使用Zotero+Sci-Hub插件快速获取PDF
+
+配置Chrome扩展「Unpaywall」即时获取合法副本
+
+通过「Scholarcy」快速解析论文要点
+
+检索增强技巧：
+
+Google学术搜索限定词：
+after:2023 "technology name" filetype:pdf
+
+GitHub搜索：
+"技术名称" path:pdfs/ in:readme
